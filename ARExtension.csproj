@@ -30,14 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PX.Common">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcumaticaDemo2\Bin\PX.Common.dll</HintPath>
+    <Reference Include="PX.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcumaticaDemo\Bin\PX.Common.dll</HintPath>
     </Reference>
-    <Reference Include="PX.Data">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcumaticaDemo2\Bin\PX.Data.dll</HintPath>
+    <Reference Include="PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcumaticaDemo\Bin\PX.Data.dll</HintPath>
     </Reference>
-    <Reference Include="PX.Objects">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcumaticaDemo2\Bin\PX.Objects.dll</HintPath>
+    <Reference Include="PX.Objects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Acumatica ERP\AcumaticaDemo\Bin\PX.Objects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

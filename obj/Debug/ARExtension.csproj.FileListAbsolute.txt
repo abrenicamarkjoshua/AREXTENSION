@@ -90,3 +90,4 @@ C:\Users\Fujitsu\Documents\Visual Studio 2015\Projects\AcumaticaDemo2\ARExtensio
 C:\Users\Fujitsu\Documents\Visual Studio 2015\Projects\AcumaticaDemo2\ARExtension\bin\Debug\zh-Hant\System.Spatial.resources.dll
 C:\Users\Fujitsu\Documents\Visual Studio 2015\Projects\AcumaticaDemo2\ARExtension\obj\Debug\ARExtension.dll
 C:\Users\Fujitsu\Documents\Visual Studio 2015\Projects\AcumaticaDemo2\ARExtension\obj\Debug\ARExtension.pdb
+C:\Users\Fujitsu\Documents\Visual Studio 2015\Projects\AcumaticaDemo2\ARExtension\obj\Debug\ARExtension.csprojResolveAssemblyReference.cache
