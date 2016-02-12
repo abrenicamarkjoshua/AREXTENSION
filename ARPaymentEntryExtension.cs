@@ -19,35 +19,8 @@ namespace ARExtension
     {
         protected virtual void ARPayment_RowSelected(PXCache cache, PXRowSelectedEventArgs e)
         {
-            ARPayment aRPayment = e.Row as ARPayment;
-            if (aRPayment == null || this.InternalCall)
-            {
-                return;
-            }
-            bool flag12 = false;
-            bool flag8 = aRPayment.Released == true;
-            bool flag9 = aRPayment.OpenDoc == true;
-            if (flag8 && flag9)
-            {
-                int count = Base.Adjustments_Raw.Select(new object[0]).Count;
-                using (System.Collections.Generic.IEnumerator<PXResult<ARAdjust>> enumerator = Base.Adjustments_Raw.Select(new object[0]).GetEnumerator())
-                {
-                    while (enumerator.MoveNext())
-                    {
-                        ARAdjust aRAdjust = enumerator.Current;
-                        if (aRAdjust.Voided.Value)
-                        {
-                            break;
-                        }
-                        if (aRAdjust.Hold == true)
-                        {
-                            flag12 = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            this.selectInvoices.SetEnabled(aRPayment.CustomerID.HasValue && aRPayment.OpenDoc.Value && !flag12 && (aRPayment.DocType == "PMT" || aRPayment.DocType == "PPM" || aRPayment.DocType == "CRM"));
+
+            this.selectInvoices.SetEnabled(Base.loadInvoices.GetEnabled());
 
         }
         public const string Open = "N";
